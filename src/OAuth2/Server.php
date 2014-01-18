@@ -52,6 +52,7 @@ class Server implements ResourceControllerInterface,
 
     protected $storageMap = array(
         'access_token' => 'OAuth2\Storage\AccessTokenInterface',
+        'id_token' => 'OAuth2\Storage\IdTokenInterface',
         'authorization_code' => 'OAuth2\Storage\AuthorizationCodeInterface',
         'client_credentials' => 'OAuth2\Storage\ClientCredentialsInterface',
         'client' => 'OAuth2\Storage\ClientInterface',
@@ -63,6 +64,8 @@ class Server implements ResourceControllerInterface,
     protected $responseTypeMap = array(
         'token' => 'OAuth2\ResponseType\AccessTokenInterface',
         'code' => 'OAuth2\ResponseType\AuthorizationCodeInterface',
+        'id_token' => 'OAuth2\ResponseType\IdTokenInterface',
+        'token id_token' => 'OAuth2\ResponseType\IdTokenInterface',
     );
 
     /**
