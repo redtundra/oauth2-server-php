@@ -15,7 +15,7 @@ class Mac implements TokenTypeInterface
         return 'mac';
     }
 
-    public function getAccessTokenParameter(RequestInterface $request, ResponseInterface $response)
+    public function getAccessTokenParameter(RequestInterface $request=null, ResponseInterface $response=null)
     {
         throw new \LogicException("Not supported");
     }
